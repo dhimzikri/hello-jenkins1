@@ -13,7 +13,8 @@ pipeline {
      
     stage('Build') {
       steps {
-         bat 'node app.js'
+         sh 'npm install'
+         sh 'node app.js'
       }
     }  
     
