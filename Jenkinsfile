@@ -13,14 +13,14 @@ pipeline {
      
     stage('Build') {
       steps {
-        sh 'npm install'
-         sh 'node app.js'
+        bat 'npm install'
+         bat 'node app.js'
       }
     }  
     
     stage('Test') {
       steps {
-        sh ''
+        bat ''
       }
     }
   }
